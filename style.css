@@ -381,3 +381,91 @@ do resto deixa com o css
     margin-top: -4rem;
     margin-left: -2rem;
 }
+
+/*aqui termina a pagina conhecimentos */
+
+/*As proximas modificacoes correspondem a pagina projeto*/
+.projetos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 6rem;
+}
+
+.card{
+    width: 23rem;
+    height: 30rem;
+    position: relative;
+}
+
+.card-img-wraper{
+ width: 100%;
+ height: 100%;
+ background-color: black;
+ border-radius: 1.5rem;
+}
+
+.card-img-wraper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    opacity: 0.8;
+    transition: opacity .3s;
+}
+
+.card:hover .card-img-wraper img{
+    opacity: 0.6;
+}
+.card-info{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0 0.2rem 0.3rem  rgba(0, 0, 0, .4);
+    transition: all .3s;
+}
+
+.card-info h2{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+.card-info h3{
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    color: purple;
+    margin-bottom: 1.5rem;
+}
+
+.card-info p{
+    font-family: var(--font-secondary);
+    color: white;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom:2rem ;
+
+}
+
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
+    background    : #12c2e9;
+    background    : -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    background    : linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    font-family: var(--font-action);
+    font-size: .8rem;
+    color: white;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem  .8rem rgba(0, 0, 0, .4);
+    border: none;
+
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
